@@ -30,7 +30,7 @@ public class Aula12 {
         r.alimentar();
         r.emitirSom();
         r.fazerNinho();
-        System.out.println(r.toString());
+        System.out.println(r);
 
         // Peixe
 //        p.setPeso(0.35F);
@@ -41,7 +41,7 @@ public class Aula12 {
         p.alimentar();
         p.emitirSom();
         p.soltarBolha();
-        System.out.println(p.toString());
+        System.out.println(p);
 
         // Ave
 //        a.setPeso(0.89F);
@@ -52,7 +52,7 @@ public class Aula12 {
         a.alimentar();
         a.emitirSom();
         a.fazerNinho();
-        System.out.println(a.toString());
+        System.out.println(a);
 
         Canguru c = new Canguru(55.30F, 3, 4, "marrom");
         Cachorro k = new Cachorro(3.94F, 5, 4, "preto");
@@ -70,7 +70,7 @@ public class Aula12 {
         c.alimentar();
         c.emitirSom();
         c.usarBolsa();
-        System.out.println(c.toString());
+        System.out.println(c);
 
         // Cachorro
 //        k.setPeso(3.94F);
@@ -82,7 +82,7 @@ public class Aula12 {
         k.emitirSom();
         k.abanarRabo();
         k.enterrarOsso();
-        System.out.println(k.toString());
+        System.out.println(k);
 
         // Cobra
 //        cb.setPeso(1.5F);
@@ -93,7 +93,7 @@ public class Aula12 {
         cb.alimentar();
         cb.emitirSom();
         cb.fazerNinho();
-        System.out.println(cb.toString());
+        System.out.println(cb);
 
         // Tartaruga
 //        t.setPeso(12.5F);
@@ -104,7 +104,7 @@ public class Aula12 {
         t.alimentar();
         t.emitirSom();
         t.fazerNinho();
-        System.out.println(t.toString());
+        System.out.println(t);
 
         // Peixe Dourado
 //        g.setPeso(0.35F);
@@ -115,14 +115,14 @@ public class Aula12 {
         g.alimentar();
         g.emitirSom();
         g.soltarBolha();
-        System.out.println(g.toString());
+        System.out.println(g);
 
         // Arara
 //        ar.locomover();
 //        ar.alimentar();
 //        ar.emitirSom();
 //        ar.fazerNinho();
-//        System.out.println(ar.toString());
+//        System.out.println(ar);
 
 
 
@@ -148,7 +148,8 @@ public class Aula12 {
         if (animais[9] instanceof Arara) {  // Verifica se o objeto é uma instância de Arara
             Arara arara = (Arara) animais[9];
             arara.fazerNinho(); // Método específico da Arara
-            System.out.println(arara.toString()); // Representação em string da Arara
+            arara.falando(); // Método específico da Arara
+            System.out.println(arara); // Representação em string da Arara
         }
 
 
